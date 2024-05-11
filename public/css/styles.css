@@ -1,0 +1,95 @@
+.basePage {
+    background-color: #c0daed;
+}
+
+.apiThumbnail {
+    width: 125px;
+    height: 125px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.tagDisplay {
+    transform: translateY(-10px);
+}
+
+.explain-CR {
+    color: black;
+    transform: translateX(10px);
+    margin-bottom: 15px;
+}
+
+.star-rating {
+    direction: rtl;
+}
+
+.star-rating label {
+    font-size: 35px;
+    color: #ccc;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffe234;
+}
+
+#error {
+    color: #da1b41;
+}
+
+.spColor {
+    /* spotify green */
+    background-color: #1db954 !important;
+    border-color: #1db954 !important;
+}
+
+.spColor:hover {
+    /* bootstrap green on hover */
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+.spColor-outline {
+    /* spotify green */
+    color: #1db954 !important;
+    border-color: #1db954 !important;
+}
+
+.spColor-outline:hover {
+    color: #ffffff !important;
+    background-color: #1db954 !important;
+    border-color: #1db954 !important;
+}
+
+.btn-primary {
+    background-color: #7f50b9 !important;
+    border-color: #7f50b9 !important;
+}
+
+.btn-primary:hover {
+    background-color: #8a5fbf !important;
+    border-color: #8a5fbf !important;
+}
+
+.btn-danger {
+    background-color: #dc6a87 !important;
+    border-color: #dc6a87 !important;
+}
+
+.btn-danger:hover {
+    background-color: #e3879e !important;
+    border-color: #e3879e !important;
+}
+
+iframe {
+    width: 100%;
+}

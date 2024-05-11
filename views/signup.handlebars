@@ -1,0 +1,73 @@
+<div class="container text-center py-5 px-3" id="titleContainer">
+    <h1 class="display-6 text-body-emphasis fw-medium">Sign up for Tweeter.</h1>
+</div>
+
+<div class="container" id="signupContainer">
+    <form method="POST" id="signup" action="/signup">
+        <div class="row">
+            <div class="col">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input required id="username" name="username" type="text" placeholder="Username" class="form-control">
+                </div>
+            </div>
+
+            <div class="col">
+                <label for="name" class="form-label">Display Name</label>
+                <input id="name" name="name" type="text" placeholder="Display name (optional)" class="form-control">
+            </div>
+        </div>
+
+        
+
+        <br>
+
+        <label for="password" class="form-label">Password</label>
+        <input required id="password" name="password" type="password" placeholder="Password" class="form-control">
+
+        <br>
+
+        <label for="confirmPassword" class="form-label">Comfirm Password</label>
+        <input required id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" class="form-control">
+
+        <br>
+
+        <label for="dateOfBirth" class="form-label">Date of Birth</label>
+        <input required type="date" id="dateOfBirth" name="dateOfBirth" class="form-control">
+
+        <br>
+
+
+        <div class="form-check"> {{! TODO: fix formatting for bootstrap --}}
+            <label>Profile Type</label>
+
+            <br>
+
+            <input required type="radio" id="public" value="public" name="publicProfile" class="form-check-input">
+            <label for="public" class="form-check-label">Public</label>
+        </div>
+
+        <div class="form-check">
+            <br>
+
+            <input required type="radio" id="private" value="private" name="publicProfile" class="form-check-input">
+            <label for="private" class="form-check-label">Private</label>
+        </div>
+
+
+        
+        <br>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <a href="/login">Already have an account? Log in.</a>
+    </form>
+
+    <div hidden class="font-monospace" id="error">{{errmsg}}</div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type='text/javascript' src='/public/js/signup_validation.js'></script>
