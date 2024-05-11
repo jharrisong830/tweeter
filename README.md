@@ -1,6 +1,8 @@
 # Tweeter - Playlist Social Media Web Application
 Group 7 final project for CS 546 (Web Programming) at Stevens Institute of Technology
 
+See the original project repository [here](https://github.com/jharrisong830/cs546-group7).
+
 ## Getting Started
 
 Starting the application is very simple. Just run the following commands in the project root:
