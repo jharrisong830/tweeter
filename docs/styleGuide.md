@@ -12,6 +12,18 @@
 
 
 
+## Using Git CLI
+
+- `git <pull | fetch> [origin]`, to get most recent changes from `origin` remote source (do **not** add another remote, `origin` should be the only remote)
+- `git branch -a` to list all branches, remote and local (some duplicates might appear, regular `git branch` will only list local, will not show all branches if local repo has never seen them before)
+- `git switch <branch>` or `git checkout <branch>` to switch to the given branch (can be just the branch name, don't need `HEAD` or `origin/...`)
+- `git status` shows current branch, and its version status (new/changed/deleted files)
+- `git add -A` to stage all changes for commit (including files that haven't been added to source control yet), `git add <file>...` to only stage certain files
+- `git commit -m 'message goes here'` to commit with message (`git commit` opens default terminal editor, usually vim so try not to do that lol)
+- `git commit -a` to automatically stage all changes and then commit those changes (does **not** include files that haven't been added to source control with `git add ...`)
+- `git push` uploads all of the changes to online repository
+
+
 
 ## Naming and Other Conventions 
 
